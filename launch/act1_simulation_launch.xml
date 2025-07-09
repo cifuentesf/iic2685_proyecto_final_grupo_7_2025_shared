@@ -20,15 +20,14 @@
 
   <!-- Transformación de Coordenadas: base_link a laser -->
   <node pkg="tf2_ros" exec="static_transform_publisher" name="base_link_to_laser" 
-        args="--x 0.0 --y 0.0 --z 0.0 --roll 0.0 --pitch 0.0 --yaw 0.0 --frame-id base_link --child-frame-id laser"/>
+        args="--x 0 --y -1.50 --z 0.0 --roll 0.0 --pitch 0.0 --yaw 0.0 --frame-id base_link --child-frame-id laser"/>
 
-  <!-- Transformación de Coordenadas: world_map a odom -->
+  <!-- Transformación de Coordenadas: world_map a odam -->
   <node pkg="tf2_ros" exec="static_transform_publisher" name="world_map_to_odom" 
-        args="--x 0.0 --y 0.0 --z 0.0 --roll 0.0 --pitch 0.0 --yaw 0.0 --frame-id world_map --child-frame-id odom"/>
+        args="--x 1.90 --y 1.50 --z 0.0 --roll 0.0 --pitch 0.0 --yaw 0.0 --frame-id world_map --child-frame-id odom"/>
 
   <!-- Visualizador RViz2 con configuración específica -->
-  <node pkg="rviz2" exec="rviz2" name="rviz" output="screen" />
-  <!-- node pkg="rviz2" exec="rviz2" name="rviz2" output="screen" 
-        args="-d $(find-pkg-share iic2685_proyecto_final_grupo_7_2025)/rviz/simulation_config.rviz"/-->
+    <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen" 
+        args="-d $(find-pkg-share iic2685_proyecto_final_grupo_7_2025)/rviz/simulation_config.rviz"/>
 
 </launch>
