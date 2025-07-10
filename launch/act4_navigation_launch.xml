@@ -43,7 +43,7 @@
   </node>
     <include file="$(find-pkg-share nav2_bringup)/launch/navigation_launch.py" >
 
-  <arg name="params_file" value="$(find-pkg-share iic2685_proyecto_final_grupo_7_2025)/nav2_params.
+  <arg name="params_file" value="$(find-pkg-share iic2685_proyecto_final_grupo_7_2025)/params/nav2_params.
      yaml" />
   </include>
 
