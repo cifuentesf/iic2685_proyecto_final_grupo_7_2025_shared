@@ -33,7 +33,9 @@
   <!-- Nodo de apoyo -->
 
   <!-- Navegación -->
-  <node pkg="iic2685_proyecto_final_grupo_7_2025" exec="navigation_helper.py" name="navigation" output="screen" />
+  <node pkg="iic2685_proyecto_final_grupo_7_2025" exec="navigation_helper" name="navigation" output="screen" />
+
+</launch>
 
   <!-- Comandos a usar -->
   
@@ -48,4 +50,4 @@
   -->
   
 
-</launch>
+
