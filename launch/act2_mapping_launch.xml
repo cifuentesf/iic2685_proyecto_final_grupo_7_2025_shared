@@ -33,7 +33,7 @@
   <!-- Nodo de apoyo -->
 
   <!-- Navegación -->
-  <node pkg="iic2685_proyecto_final_grupo_7_2025" exec="navigation_helper" name="navigation" output="screen" />
+  <!-- node pkg="iic2685_proyecto_final_grupo_7_2025" exec="navigation_helper" name="navigation" output="screen" / -->
 
   <!-- Comandos a usar:
   

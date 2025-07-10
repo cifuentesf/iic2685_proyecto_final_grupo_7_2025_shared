@@ -26,9 +26,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'robot_controller = iic2685_proyecto_final_grupo_7_2025.robot_controller:main',
-            'map_manager = iic2685_proyecto_final_grupo_7_2025.map_manager:main',
-            'localization_helper = iic2685_proyecto_final_grupo_7_2025.localization_helper:main',
             'navigation_helper = iic2685_proyecto_final_grupo_7_2025.navigation_helper:main',
         ],
     },
