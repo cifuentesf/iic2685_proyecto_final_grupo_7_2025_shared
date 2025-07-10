@@ -41,10 +41,9 @@
     <param name="laser_max_beams" value="181"/>
     <param name="min_particles" value="250"/>
   </node>
-    <include file="$(find-pkg-share nav2_bringup)/launch/navigation_launch.py" >
-
-  <arg name="params_file" value="$(find-pkg-share iic2685_proyecto_final_grupo_7_2025)/params/nav2_params.
-     yaml" />
+  
+  <include file="$(find-pkg-share nav2_bringup)/launch/navigation_launch.py" >
+    <arg name="params_file" value="$(find-pkg-share iic2685_proyecto_final_grupo_7_2025)/params/nav2_params.yaml" />
   </include>
 
   <!-- Nodo de apoyo -->
